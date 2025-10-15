@@ -35,15 +35,16 @@
         //**************************
         static int[] sortuj(int[] tablica)
         {
-            int[] tablicaPosortowana = new int[tablica.Length];
             for (int i = 0; i < tablica.Length; i++)
             {
                 int najwieksza = znajdzNajwieksza(tablica, i);
-                tablicaPosortowana[i] = tablica[najwieksza];
-                tablica[najwieksza] = tablica[i];
+                int temp = tablica[i];
+                tablica[i] = tablica[najwieksza];
+                tablica[najwieksza] = temp;
+
             }
 
-            return tablicaPosortowana;
+            return tablica;
         }
 
         //**************************
