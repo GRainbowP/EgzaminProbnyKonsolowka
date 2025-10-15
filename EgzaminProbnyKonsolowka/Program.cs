@@ -33,7 +33,7 @@
         //zwracany typ i opis: int[] - tablica posortowana
         //autor: Paweł
         //**************************
-        static private int[] sortuj(int[] tablica)
+        static int[] sortuj(int[] tablica)
         {
             int[] tablicaPosortowana = new int[tablica.Length];
             for (int i = 0; i < tablica.Length; i++)
